@@ -2,10 +2,11 @@ const { merge } = require("webpack-merge");
 const modulefedrationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const webpackCommon = require("./webpack.common");
 const packageJson = require("../package.json");
-const devConfig = {
-  mode: "development",
+const prodConfig = {
+  mode: "production",
   output: {
     filename: "[name].[contenthash].js",
+    publicPath: "/marketing/latest",
   },
   plugins: [
     new modulefedrationPlugin({
@@ -19,4 +20,4 @@ const devConfig = {
   ],
 };
 
-module.exports = merge(webpackCommon, devConfig);
+module.exports = merge(webpackCommon, prodConfig);
