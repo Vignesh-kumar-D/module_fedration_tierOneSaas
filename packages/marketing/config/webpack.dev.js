@@ -1,6 +1,6 @@
 const { merge } = require("webpack-merge");
 const htmlWebpackPlugin = require("html-webpack-plugin");
-const modulefedrationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
+const ModulefedrationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const webpackCommon = require("./webpack.common");
 const packageJson = require("../package.json");
 const devConfig = {
@@ -8,11 +8,11 @@ const devConfig = {
   devServer: {
     port: 8081,
     historyApiFallback: {
-      index: "index.html",
+      index: "/index.html",
     },
   },
   plugins: [
-    new modulefedrationPlugin({
+    new ModulefedrationPlugin({
       name: "marketing",
       filename: "remoteEntry.js",
       exposes: {
