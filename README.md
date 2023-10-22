@@ -14,8 +14,8 @@ https://d2wp3ptv2obz4u.cloudfront.net/
 - 
 ## Description:
 This app shows how `microservices` can be used to make different apps and integrate them made for my personal  learning purpose and is not functional with api integartion.
-* This app used `React` and `Vue` framework to make micro apps and uses | Webpack            | ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)   as a budler and `module fedration` to create and integrate microservices
-* The app uses `git/github` for version control and `CI/CD` worflows to run actions
+* This app used ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  and ![Vue.js](https://img.shields.io/badge/vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D) framework to make micro apps and uses |![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)   as a budler and `module fedration` to create and integrate microservices
+* The app uses ![GithubPages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)  for version control and `CI/CD` worflows to run actions
 * `Amazon S3 storage` is used to store the build files automatically using github actions on push
 * `Amazon cloudFront` is used to deploy the APP
 
@@ -59,7 +59,7 @@ To Start Server:
 ## Reflection:
 
 This is a side Project I developed to better understand how to work with micro frontends to create apps which are independent and can be developed and modified in isolation.
-This was a two week long project and started as a | React              | ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) reat based microfrontend.
+This was a two week long project and started as a  `React` based microfrontend.
 
 Communicating Navigation history  used some amount props driling and could have solved using a shared state but I wanted all thee apps to be almost independently developled and deployed so most communications between host and remote are only using Callback functions and
 
