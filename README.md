@@ -1,12 +1,20 @@
 # Microservices using webpack Module Fedrationn
 
+
 ## TierOne Saas 
 To Visit App:
 https://d2wp3ptv2obz4u.cloudfront.net/ 
-
+# Table of contents
+- [Title](#markdown-badges)
+- [Table of contents]T(#table-of-contents)
+- [Description](#Description)
+- [Project assmed requirements](#project-assumed-requirements)
+- [Installation and Setup Instructions](#installation-and-setup-instruction)
+- [Reflection](#Reflection)
+- 
 ## Description:
 This app shows how `microservices` can be used to make different apps and integrate them made for my personal  learning purpose and is not functional with api integartion.
-* This app used `React` and `Vue` framework to make micro apps and uses `webpack` as a budler and `module fedration` to create and integrate microservices
+* This app used `React` and `Vue` framework to make micro apps and uses | Webpack            | ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)   as a budler and `module fedration` to create and integrate microservices
 * The app uses `git/github` for version control and `CI/CD` worflows to run actions
 * `Amazon S3 storage` is used to store the build files automatically using github actions on push
 * `Amazon cloudFront` is used to deploy the APP
@@ -24,11 +32,6 @@ This app shows how `microservices` can be used to make different apps and integr
 5. Container should be able to decide to always use the latest version of a microfrontend or specify a specific version
     - Currently only latest version of the microservices are deployed  but if required container can specify a version and deploy and use the specific version 
 
-## Challenges faced while Development:
-1. CSS from one app was applied to another apps element when integrated
-   - This happened only in prod as both sub apps had different styles with same class name and all styles were applied when integrated 
-   - Resolved by customizing the material UI's CSS in JS feature in each microservice to generate unique class name
-2.  Cloudfront did not serve the pages when deployed i
 
 ## Project Screen Shot(s):
 Container Service is the Host App showing Header and Marketing Service using `Module Fedration`
@@ -55,19 +58,16 @@ To Start Server:
 
 ## Reflection:
 
-  - What was the context for this project? (ie: was this a side project? was this for Turing? was this for an experiment?)
-  - What did you set out to build?
-  - Why was this project challenging and therefore a really good learning experience?
-  - What were some unexpected obstacles?
-  - What tools did you use to implement this project?
-      - This might seem obvious because you are IN this codebase, but to all other humans now is the time to talk about why you chose webpack instead of create react app, or D3, or vanilla JS instead of a framework etc. Brag about your choices and justify them here.  
+This is a side Project I developed to better understand how to work with micro frontends to create apps which are independent and can be developed and modified in isolation.
+This was a two week long project and started as a | React              | ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) reat based microfrontend.
 
-#### Example:  
+Communicating Navigation history  used some amount props driling and could have solved using a shared state but I wanted all thee apps to be almost independently developled and deployed so most communications between host and remote are only using Callback functions and
 
-This was a 3 week long project built during my third module at Turing School of Software and Design. Project goals included using technologies learned up until this point and familiarizing myself with documentation for new features.  
+Also I have not used create-react-app or Vue-cli to build the apps as that would include all other dependencies with them and I wanted to keep this light as the goal was only to better understand miccro fronends
 
-Originally I wanted to build an application that allowed users to pull data from the Twitter API based on what they were interested in, such as 'most tagged users'. I started this process by using the `create-react-app` boilerplate, then adding `react-router-4.0` and `redux`.  
+Took help of documentation to see how to use CI/CD to and deploy to S3 on push to `main` branch and how to deploy in cloudfront
 
+ 
 One of the main challenges I ran into was Authentication. This lead me to spend a few days on a research spike into OAuth, Auth0, and two-factor authentication using Firebase or other third parties. Due to project time constraints, I had to table authentication and focus more on data visualization from parts of the API that weren't restricted to authenticated users.
 
 At the end of the day, the technologies implemented in this project are React, React-Router 4.0, Redux, LoDash, D3, and a significant amount of VanillaJS, JSX, and CSS. I chose to use the `create-react-app` boilerplate to minimize initial setup and invest more time in diving into weird technological rabbit holes. In the next iteration I plan on handrolling a `webpack.config.js` file to more fully understand the build process.
