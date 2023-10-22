@@ -1,6 +1,5 @@
 # Microservices using webpack Module Fedrationn
 
-
 ## TierOne Saas 
 To Visit App:
 https://d2wp3ptv2obz4u.cloudfront.net/ 
@@ -11,7 +10,7 @@ https://d2wp3ptv2obz4u.cloudfront.net/
 - [Project assmed requirements](#project-assumed-requirements)
 - [Installation and Setup Instructions](#installation-and-setup-instruction)
 - [Reflection](#Reflection)
-- 
+  
 ## Description:
 This app shows how `microservices` can be used to make different apps and integrate them made for my personal  learning purpose and is not functional with api integartion.
 * This app used ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  and ![Vue.js](https://img.shields.io/badge/vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D) framework to make micro apps and uses ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)   as a budler and `module fedration` to create and integrate microservices
@@ -67,7 +66,3 @@ Also I have not used create-react-app or Vue-cli to build the apps as that would
 
 Took help of documentation to see how to use CI/CD to and deploy to S3 on push to `main` branch and how to deploy in cloudfront
 
- 
-One of the main challenges I ran into was Authentication. This lead me to spend a few days on a research spike into OAuth, Auth0, and two-factor authentication using Firebase or other third parties. Due to project time constraints, I had to table authentication and focus more on data visualization from parts of the API that weren't restricted to authenticated users.
-
-At the end of the day, the technologies implemented in this project are React, React-Router 4.0, Redux, LoDash, D3, and a significant amount of VanillaJS, JSX, and CSS. I chose to use the `create-react-app` boilerplate to minimize initial setup and invest more time in diving into weird technological rabbit holes. In the next iteration I plan on handrolling a `webpack.config.js` file to more fully understand the build process.
