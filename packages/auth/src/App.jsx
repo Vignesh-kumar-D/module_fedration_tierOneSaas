@@ -11,18 +11,16 @@ const generateClassName = createGenerateClassName({
 });
 const App = ({ onSignIn }) => {
   return (
-    <div>
-      <StylesProvider generateClassName={generateClassName}>
-        <Switch>
-          <Route path="/auth/signin" component={SignIn}>
-            <SignIn onSignIn={onSignIn} />
-          </Route>
-          <Route path="/auth/signup" component={SignUp}>
-            <SignUp onSignIn={onSignIn} />
-          </Route>
-        </Switch>
-      </StylesProvider>
-    </div>
+    <StylesProvider generateClassName={generateClassName}>
+      <Switch>
+        <Route path="/auth/signin" component={SignIn}>
+          <SignIn onSignIn={onSignIn} />
+        </Route>
+        <Route path="/auth/signup" component={SignUp}>
+          <SignUp onSignIn={onSignIn} />
+        </Route>
+      </Switch>
+    </StylesProvider>
   );
 };
 
