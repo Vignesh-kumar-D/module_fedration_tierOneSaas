@@ -6,7 +6,7 @@ To Visit App:
 https://d2wp3ptv2obz4u.cloudfront.net/ 
 # Table of contents
 - [Title](#markdown-badges)
-- [Table of contents]T(#table-of-contents)
+- [Table of contents](#table-of-contents)
 - [Description](#Description)
 - [Project assmed requirements](#project-assumed-requirements)
 - [Installation and Setup Instructions](#installation-and-setup-instruction)
