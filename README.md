@@ -24,13 +24,13 @@ This app shows how `microservices` can be used to make different apps and integr
 5. Container should be able to decide to always use the latest version of a microfrontend or specify a specific version
     - Currently only latest version of the microservices are deployed  but if required container can specify a version and deploy and use the specific version 
 
-### Challenges faced while Development:
+## Challenges faced while Development:
 1. CSS from one app was applied to another apps element when integrated
    - This happened only in prod as both sub apps had different styles with same class name and all styles were applied when integrated 
    - Resolved by customizing the material UI's CSS in JS feature in each microservice to generate unique class name
 2.  Cloudfront did not serve the pages when deployed i
 
-## Project Screen Shot(s)
+## Project Screen Shot(s):
 Container Service is the Host App showing Header and Marketing Service using `Module Fedration`
 ![Screenshot 2023-10-22 201314](https://github.com/legendvi/module_fedration_tierOneSaas/assets/41253273/5e6dcb2b-ec49-476b-a95d-a3f32f41efdc)
 ![Screenshot 2023-10-22 201244](https://github.com/legendvi/module_fedration_tierOneSaas/assets/41253273/525b8084-26e2-4bf6-8c0d-2ca4dc012d5b)
