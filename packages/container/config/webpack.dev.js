@@ -6,6 +6,7 @@ const webpackCommon = require("./webpack.common");
 const LOCAL_PORT = 8080;
 const devConfig = {
   mode: "development",
+  devtool: "cheap-module-source-map",
   output: {
     publicPath: `http://localhost:${LOCAL_PORT}/`,
   },
@@ -13,6 +14,9 @@ const devConfig = {
     port: LOCAL_PORT,
     historyApiFallback: {
       index: "/index.html",
+    },
+    headers: {
+      "Access-Control-Allow-Origin": "*",
     },
   },
   plugins: [

@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { LinerProgress } from "@material-ui/core";
+import { LinearProgress } from "@material-ui/core";
 
 const useStyles = makeStyles(() => ({
   DisableBackground: {
@@ -15,8 +15,8 @@ const useStyles = makeStyles(() => ({
 const Loader = () => {
   const classes = useStyles();
   return (
-    <div className={classes.DisableBackground}>
-      <LinerProgress />
+    <div className={classes.DdisableBackground}>
+      <LinearProgress />
     </div>
   );
 };
