@@ -1,14 +1,17 @@
 # Microservices using webpack Module Fedrationn
 
-##TierOne Saas 
+## TierOne Saas 
+To Visit App:
+https://d2wp3ptv2obz4u.cloudfront.net/ 
 
+## Description:
 This app shows how `microservices` can be used to make different apps and integrate them made for my personal  learning purpose and is not functional with api integartion.
 * This app used `React` and `Vue` framework to make micro apps and uses `webpack` as a budler and `module fedration` to create and integrate microservices
 * The app uses `git/github` for version control and `CI/CD` worflows to run actions
 * `Amazon S3 storage` is used to store the build files automatically using github actions on push
 * `Amazon cloudFront` is used to deploy the APP
 
-## Project Assumed Requirements
+## Project Assumed Requirements:
 1. Zero coupling between child projects
    - Each microservice is a individual package and can be used in isolation also for development
    -  To demostrate all apps can be developed independently one microservices  is built using `Vue` while others are using `React`
@@ -21,7 +24,7 @@ This app shows how `microservices` can be used to make different apps and integr
 5. Container should be able to decide to always use the latest version of a microfrontend or specify a specific version
     - Currently only latest version of the microservices are deployed  but if required container can specify a version and deploy and use the specific version 
 
-###Challenges faced while Development:
+### Challenges faced while Development:
 1. CSS from one app was applied to another apps element when integrated
    - This happened only in prod as both sub apps had different styles with same class name and all styles were applied when integrated 
    - Resolved by customizing the material UI's CSS in JS feature in each microservice to generate unique class name
@@ -38,8 +41,7 @@ Authetication Service:
 Dashboard Service:
 ![Screenshot 2023-10-22 201404](https://github.com/legendvi/module_fedration_tierOneSaas/assets/41253273/585bd5ef-6e4a-4360-ad63-11059c69ff7f)
 
-## Installation and Setup Instructions
-
+## Installation and Setup Instructions:
   
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
@@ -47,16 +49,11 @@ Installation:
 
 `npm install`  
 
-
 To Start Server:
 
 `npm start`  
 
-To Visit App:
-
-`https://d2wp3ptv2obz4u.cloudfront.net/ 
-
-## Reflection
+## Reflection:
 
   - What was the context for this project? (ie: was this a side project? was this for Turing? was this for an experiment?)
   - What did you set out to build?
