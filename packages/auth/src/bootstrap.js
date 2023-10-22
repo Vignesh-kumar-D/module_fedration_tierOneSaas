@@ -5,7 +5,7 @@ import { Router } from "react-router-dom";
 import { createMemoryHistory, createBrowserHistory } from "history";
 //mount function to start the app
 
-const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
+const mount = (el, { onNavigate, defaultHistory, initialPath, onSignIn }) => {
   const history =
     defaultHistory ??
     createMemoryHistory({
@@ -21,7 +21,7 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
   }
   renderDom.render(
     <Router history={history}>
-      <App />
+      <App onSignIn={onSignIn} />
     </Router>,
     el
   );
