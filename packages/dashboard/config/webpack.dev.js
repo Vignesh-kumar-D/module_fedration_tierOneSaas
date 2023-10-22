@@ -1,29 +1,34 @@
 const { merge } = require("webpack-merge");
+const htmlWebpackPlugin = require("html-webpack-plugin");
 const ModulefedrationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
-const packageJson = require("../package.json");
 const webpackCommon = require("./webpack.common");
-
-const LOCAL_PORT = 8080;
+const packageJson = require("../package.json");
+const PORT = 8083;
 const devConfig = {
   mode: "development",
   output: {
-    publicPath: `http://localhost:${LOCAL_PORT}/`,
+    publicPath: `http://localhost:${PORT}/`,
   },
   devServer: {
-    port: LOCAL_PORT,
+    port: PORT,
     historyApiFallback: {
       index: "/index.html",
+    },
+    headers: {
+      "Access-Control-Allow-Origin": "*",
     },
   },
   plugins: [
     new ModulefedrationPlugin({
-      name: "container",
-      remotes: {
-        marketing: `marketing@http://localhost:8081/remoteEntry.js`,
-        auth: `auth@http://localhost:8082/remoteEntry.js`,
-        dashboard: `dashboard@http://localhost:8083/remoteEntry.js`,
+      name: "dashboard",
+      filename: "remoteEntry.js",
+      exposes: {
+        "./dashboardApp": "./src/bootstrap",
       },
       shared: packageJson.dependencies,
+    }),
+    new htmlWebpackPlugin({
+      template: "public/index.html",
     }),
   ],
 };
