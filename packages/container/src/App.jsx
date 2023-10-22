@@ -1,26 +1,31 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import MarketingApp from "./components/MarketingApp";
-import Typography from "@material-ui/core/Typography";
+import React, { lazy, Suspense } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import {
   StylesProvider,
   createGenerateClassName,
 } from "@material-ui/core/styles";
+import Loader from "./components/Loader";
+
+const MarketingLazy = lazy(() => import("./components/MarketingApp"));
+const AuthLazy = lazy(() => import("./components/AuthApp"));
 
 const App = () => {
   const generateClassName = createGenerateClassName({
     productionPrefix: "co",
   });
+
   return (
     <BrowserRouter>
-      <StylesProvider generateClassName={generateClassName}>
-        <Header />
-        <Typography align="center" variant="h3" component="h2">
-          Welocome to our TierOne SaaS!!
-        </Typography>
-        <MarketingApp />
-      </StylesProvider>
+      <Switch>
+        <StylesProvider generateClassName={generateClassName}>
+          <Header />
+          <Suspense fallback={() => <Loader />}>
+            <Route path="/auth" component={AuthLazy} />
+            <Route path="/" component={MarketingLazy} />
+          </Suspense>
+        </StylesProvider>
+      </Switch>
     </BrowserRouter>
   );
 };
