@@ -16,7 +16,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <MaterialLink component={Link} to="/" color="inherit">
-        Your Website
+        TierOne
       </MaterialLink>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -156,7 +156,7 @@ function Album() {
           color="textSecondary"
           component="p"
         >
-          Something here to give the footer a purpose!
+          made with &#10084; from D Vignesh Kumar
         </Typography>
         <Copyright />
       </footer>
