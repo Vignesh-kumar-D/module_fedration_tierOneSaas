@@ -58,7 +58,7 @@ flowchart TB
     class RemoteApps remote
     class MF mf
     class CI ci
-```mermaid
+
 ### Core Services
 1. **Container (Host)**
    - Main application shell
