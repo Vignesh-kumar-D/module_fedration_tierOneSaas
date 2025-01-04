@@ -2,7 +2,7 @@
 
 ## TierOne Saas 
 To Visit App:
-https://d2wp3ptv2obz4u.cloudfront.net/ 
+https://d2wp3ptv2obz4u.cloudfront.net/ (This site is down as AWS started charging money you can check the [installation](#installation-and-setup-instruction) and run this locally  )
 # Table of contents
 - [Title](#markdown-badges)
 - [Table of contents](#table-of-contents)
