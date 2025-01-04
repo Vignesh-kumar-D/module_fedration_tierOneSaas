@@ -63,18 +63,21 @@ The TierOne application implements a micro-frontend architecture using Webpack 5
 - ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 
 ## 📸 Screenshots
-Container Service is the Host App showing Header and Marketing Service using `Module Fedration`
+**Container Service is the Host App showing Header and Marketing Service using `Module Fedration**
+
 ![Screenshot 2023-10-22 201314](https://github.com/legendvi/module_fedration_tierOneSaas/assets/41253273/704e5e1a-3e46-44b1-9a91-5abbc6724ea6)
 ![Screenshot 2023-10-22 201244](https://github.com/legendvi/module_fedration_tierOneSaas/assets/41253273/d957a4e8-e01d-4314-9855-412ca740db3c)
 
 
 
-Authetication Service:
+**Authetication Service**
+
 ![Screenshot 2023-10-22 201336](https://github.com/legendvi/module_fedration_tierOneSaas/assets/41253273/a41c19c9-8e86-4fd6-875a-ff41a83614f8)
 ![Screenshot 2023-10-22 201329](https://github.com/legendvi/module_fedration_tierOneSaas/assets/41253273/ab37565a-c159-4eab-b108-5f4e9ec4d6cb)
 
 
-Dashboard Service:
+**Dashboard Service**
+
 ![Screenshot 2023-10-23 185350](https://github.com/legendvi/module_fedration_tierOneSaas/assets/41253273/aa020476-7868-40de-98b5-fbcfc23c07bc)
 
 
