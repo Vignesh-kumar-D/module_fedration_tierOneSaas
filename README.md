@@ -10,53 +10,11 @@ Enterprise-grade demonstration of micro-frontend architecture using Webpack 5's 
 ## 🏗️ Architecture
 The TierOne application implements a micro-frontend architecture using Webpack 5's Module Federation. Here's how the different pieces fit together:
 ```mermaid
-flowchart TB
-    subgraph AWS["AWS Infrastructure"]
-        CF["CloudFront\nDistribution"]
-        S3["S3 Buckets"]
-    end
-    
-    subgraph CI["CI/CD Pipeline"]
-        GH["GitHub\nActions"]
-    end
-    
-    subgraph Container["Container App (React)"]
-        direction TB
-        Router["Router"]
-        Shell["App Shell"]
-        State["Shared State\n(Optional)"]
-    end
-    
-    subgraph RemoteApps["Remote Applications"]
-        direction LR
-        Marketing["Marketing Service\n(React)"]
-        Auth["Authentication\n(React)"]
-        Dashboard["Dashboard\n(Vue.js)"]
-    end
-    
-    subgraph MF["Module Federation"]
-        direction TB
-        Expose["Exposed Modules"]
-        Remote["Remote Entries"]
-    end
-    
-    GH -->|"Deploy"| S3
-    S3 -->|"Serve"| CF
-    
-    Container -->|"Import"| MF
-    RemoteApps -->|"Export"| MF
-    
-    classDef aws fill:#FF9900,stroke:#232F3E,stroke-width:2px,color:white
-    classDef container fill:#61DAFB,stroke:#20232a,stroke-width:2px
-    classDef remote fill:#42B883,stroke:#35495E,stroke-width:2px
-    classDef mf fill:#8DD6F9,stroke:#1A1A1A,stroke-width:2px
-    classDef ci fill:#2088FF,stroke:#1A1A1A,stroke-width:2px,color:white
-    
-    class AWS aws
-    class Container container
-    class RemoteApps remote
-    class MF mf
-    class GH ci
+graph TD
+    A[Start] g?}
+    B -->|Yes| C[Great!]
+    B -->|No| D[Check the syntax]
+
 
 ### Core Services
 1. **Container (Host)**
