@@ -9,13 +9,7 @@ Enterprise-grade demonstration of micro-frontend architecture using Webpack 5's 
 
 ## 🏗️ Architecture
 The TierOne application implements a micro-frontend architecture using Webpack 5's Module Federation. Here's how the different pieces fit together:
-
-```mermaid
-
-graph TD
-    A[Start] g?}
-    B -->|Yes| C[Great!]
-    B -->|No| D[Check the syntax]
+<img width="1273" alt="Screenshot 2025-01-04 at 3 23 35 PM" src="https://github.com/user-attachments/assets/1522ab60-8702-41c5-b9b7-32380a1c0216" />
 
 
 ### Core Services
