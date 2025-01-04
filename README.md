@@ -100,7 +100,7 @@ npm start
 
 # Building for production
 npm run build
- ```bash
+bash```
 ## Reflection:
 
 This is a side Project I developed to better understand how to work with micro frontends to create apps which are independent and can be developed and modified in isolation.
