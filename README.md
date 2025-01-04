@@ -8,9 +8,6 @@
 Enterprise-grade demonstration of micro-frontend architecture using Webpack 5's Module Federation. This project showcases how large-scale applications can be broken down into independently deployable micro-frontends while maintaining seamless user experience.
 
 ## 🏗️ Architecture
-![Architecture Diagram]
-## 🏗️ Architecture
-
 The TierOne application implements a micro-frontend architecture using Webpack 5's Module Federation. Here's how the different pieces fit together:
 
 ```mermaid
@@ -61,7 +58,7 @@ flowchart TB
     class RemoteApps remote
     class MF mf
     class CI ci
-
+```mermaid
 ### Core Services
 1. **Container (Host)**
    - Main application shell
