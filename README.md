@@ -57,7 +57,8 @@ flowchart TB
     class Container container
     class RemoteApps remote
     class MF mf
-    class CI ci
+    class GH ci
+
 
 ### Core Services
 1. **Container (Host)**
